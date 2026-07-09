@@ -5,6 +5,13 @@ font-size:24px;
 cursor:pointer;
 color:#d62828;
 }
+.mobile-search-btn{
+display:none;
+font-size:24px;
+cursor:pointer;
+color:#d62828;
+}
+``
 /* ===========================
    GOOGLE FONT
 =========================== */
