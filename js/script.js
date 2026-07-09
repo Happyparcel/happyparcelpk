@@ -84,3 +84,37 @@ window.addEventListener("scroll",()=>{
 
 
 console.log("HappyParcel.pk Loaded Successfully ✅");
+// ===============================
+// Mobile Menu Toggle
+// ===============================
+
+const menuBtn = document.querySelector(".mobile-menu-btn");
+const nav = document.querySelector("nav");
+
+if(menuBtn && nav){
+
+menuBtn.addEventListener("click",()=>{
+
+nav.classList.toggle("active");
+
+});
+
+}
+
+
+// ===============================
+// Mobile Search Toggle
+// ===============================
+
+const mobileSearchBtn = document.querySelector(".mobile-search-btn");
+const searchBox = document.querySelector(".search-box");
+
+if(mobileSearchBtn && searchBox){
+
+mobileSearchBtn.addEventListener("click",()=>{
+
+searchBox.classList.toggle("active");
+
+});
+
+}
