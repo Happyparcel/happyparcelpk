@@ -448,3 +448,38 @@ width:170px;
 }
 
 }
+/* ===========================
+MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+    padding:12px 5%;
+    flex-direction:column;
+    gap:12px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+nav ul{
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav ul li a{
+    font-size:13px;
+}
+
+.search-box input{
+    width:180px;
+}
+
+.search-box button{
+    padding:10px 14px;
+}
+
+}
