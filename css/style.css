@@ -1,3 +1,10 @@
+.mobile-menu-btn,
+.mobile-contact-btn{
+display:none;
+font-size:24px;
+cursor:pointer;
+color:#d62828;
+}
 /* ===========================
    GOOGLE FONT
 =========================== */
@@ -412,77 +419,40 @@ transform:scale(1.1);
 /* ===========================
 RESPONSIVE
 =========================== */
-
-@media(max-width:768px){
-
-header{
-
-flex-direction:column;
-gap:20px;
-
-}
-
-nav ul{
-
-flex-wrap:wrap;
-justify-content:center;
-
-}
-
-.hero h1{
-
-font-size:38px;
-
-}
-
-.hero p{
-
-font-size:17px;
-
-}
-
-.search-box input{
-
-width:170px;
-
-}
-
-}
-/* MOBILE HEADER */
-
-@media(max-width:768px){
+@media (max-width:768px){
 
 header{
-    height:60px;
-    padding:8px 15px;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 15px;
 }
 
 .logo{
-    font-size:18px;
-    font-weight:700;
+font-size:18px;
+flex:1;
+text-align:center;
+}
+
+.mobile-menu-btn,
+.mobile-contact-btn{
+display:block;
 }
 
 nav{
-    display:none;
+display:none;
 }
 
 .search-box{
-    display:none;
+display:none;
 }
 
-header:before{
-    content:"☰";
-    font-size:24px;
-    cursor:pointer;
+.hero h1{
+font-size:34px;
 }
 
-header:after{
-    content:"☎";
-    font-size:22px;
-    cursor:pointer;
+.hero p{
+font-size:16px;
 }
 
 }
