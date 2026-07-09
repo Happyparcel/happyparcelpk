@@ -1,185 +1,14 @@
-S<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HappyParcel.pk | Customized Gifts</title>
+<title>HappyParcel.pk | Gifts & Tech Store</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
-  
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#fafafa;
-color:#222;
-}
-
-header{
-background:white;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 3px 15px rgba(0,0,0,.08);
-position:sticky;
-top:0;
-z-index:999;
-}
-
-.logo{
-font-size:30px;
-font-weight:700;
-color:#d62828;
-}
-
-nav a{
-text-decoration:none;
-margin-left:25px;
-color:#333;
-font-weight:500;
-transition:.3s;
-}
-
-nav a:hover{
-color:#d62828;
-}
-
-.hero{
-
-height:90vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:20px;
-
-background:
-linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)),
-url("images/hero.jpg");
-
-background-size:cover;
-
-background-position:center;
-
-background-repeat:no-repeat;
-
-}
-
-@media(max-width:768px){
-
-.hero h1{
-
-font-size:35px;
-
-}
-
-.hero p{
-
-font-size:16px;
-
-}
-
-}
-.btn{
-
-display:inline-block;
-
-padding:15px 40px;
-
-background:#d62828;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:50px;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-background:#b91c1c;
-
-transform:translateY(-3px);
-
-}
-
-.categories{
-padding:80px 8%;
-text-align:center;
-}
-
-.categories h2{
-font-size:40px;
-margin-bottom:50px;
-}
-
-.category-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
-}
-
-.card{
-background:#fff;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-.categories{
-padding:80px 8%;
-text-align:center;
-}
-
-.categories h2{
-font-size:40px;
-margin-bottom:50px;
-}
-
-.category-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
-}
-
-.card{
-background:#fff;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-</style>
 
 </head>
 
@@ -188,159 +17,357 @@ box-shadow:0 10px 25px rgba(0,0,0,.15);
 <header>
 
 <div class="logo">
-
 HappyParcel.pk
-
 </div>
 
 <nav>
 
-<a href="#">Home</a>
+<ul>
 
-<a href="#">Shop</a>
+<li><a href="#">Home</a></li>
 
-<a href="#">Categories</a>
+<li><a href="#categories">Categories</a></li>
 
-<a href="#">About</a>
+<li><a href="#products">Gift Store</a></li>
 
-<a href="#">Contact</a>
+<li><a href="#tech">Tech & Lifestyle</a></li>
+
+<li><a href="#reviews">Reviews</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
 
 </nav>
+
+<div class="search-box">
+
+<input type="text" id="searchInput" placeholder="Search products...">
+
+<button id="searchBtn">
+🔍
+</button>
+
+</div>
 
 </header>
 
 <section class="hero">
 
-<div>
+<div class="hero-content">
 
-<h1>Make Every Moment Special 🎁</h1>
-  
+<h1>
+
+Make Every Moment Special 🎁
+
+</h1>
 
 <p>
-  
-Beautiful Customized Gifts Delivered With Love
-  
+
+Beautiful Customized Gifts, Bouquets, Cakes, Gift Boxes & Tech Accessories Delivered Across Pakistan.
+
 </p>
 
+<div class="hero-buttons">
 
-  
-<a href="#" class="btn">
-Explore Gifts 🎁
+<a href="#products" class="btn">
+
+Explore Gifts
+
+</a>
+
+<a href="https://wa.me/923278266830" class="btn secondary">
+
+WhatsApp Us
+
 </a>
 
 </div>
 
-</section>
-  
-<section class="categories">
+</div>
 
-<h2>Shop by Category</h2>
+</section>
+
+<section class="categories" id="categories">
+
+<h2>Browse Categories</h2>
 
 <div class="category-grid">
 
-<div class="card">
-<h3>💐 Bouquets</h3>
+<div class="category-card">
+<img src="https://via.placeholder.com/300x300?text=Bouquet" alt="">
+<h3>Bouquets</h3>
+<p>Starting From Rs. 1,499</p>
+<a href="https://wa.me/923278266830?text=I want to order Bouquet" class="btn-small">Order Now</a>
 </div>
 
-<div class="card">
-<h3>🎁 Gift Boxes</h3>
+<div class="category-card">
+<img src="https://via.placeholder.com/300x300?text=Gift+Box" alt="">
+<h3>Gift Boxes</h3>
+<p>Starting From Rs. 2,499</p>
+<a href="https://wa.me/923278266830?text=I want to order Gift Box" class="btn-small">Order Now</a>
 </div>
 
-<div class="card">
-<h3>🧺 Gift Baskets</h3>
+<div class="category-card">
+<img src="https://via.placeholder.com/300x300?text=Cake" alt="">
+<h3>Cakes</h3>
+<p>Starting From Rs. 2,199</p>
+<a href="https://wa.me/923278266830?text=I want to order Cake" class="btn-small">Order Now</a>
 </div>
 
-<div class="card">
-<h3>🎂 Cakes</h3>
+<div class="category-card">
+<img src="https://via.placeholder.com/300x300?text=Surprise+Gift" alt="">
+<h3>Surprise Gifts</h3>
+<p>Starting From Rs. 2,999</p>
+<a href="https://wa.me/923278266830?text=I want to order Surprise Gift" class="btn-small">Order Now</a>
 </div>
 
 </div>
 
 </section>
 
-<section class="products">
+<section class="products" id="products">
 
 <h2>Featured Gifts</h2>
 
 <div class="product-grid">
 
 <div class="product-card">
-<h3>🌹 Red Rose Bouquet</h3>
-<p>Starting from Rs. 2,499</p>
+<img src="https://via.placeholder.com/300x300?text=Rose+Bouquet">
+<h3>Red Rose Bouquet</h3>
+<p>⭐⭐⭐⭐⭐</p>
+<p>Starting From <strong>Rs. 2,499</strong></p>
+<a href="https://wa.me/923278266830?text=I want Red Rose Bouquet" class="btn-small">Order on WhatsApp</a>
 </div>
 
 <div class="product-card">
-<h3>🎁 Premium Gift Box</h3>
-<p>Starting from Rs. 3,999</p>
+<img src="https://via.placeholder.com/300x300?text=Luxury+Gift+Box">
+<h3>Luxury Gift Box</h3>
+<p>⭐⭐⭐⭐⭐</p>
+<p>Starting From <strong>Rs. 3,999</strong></p>
+<a href="https://wa.me/923278266830?text=I want Luxury Gift Box" class="btn-small">Order on WhatsApp</a>
 </div>
 
 <div class="product-card">
-<h3>🧸 Teddy Surprise Box</h3>
-<p>Starting from Rs. 2,999</p>
+<img src="https://via.placeholder.com/300x300?text=Teddy+Gift">
+<h3>Teddy Surprise Box</h3>
+<p>⭐⭐⭐⭐⭐</p>
+<p>Starting From <strong>Rs. 2,999</strong></p>
+<a href="https://wa.me/923278266830?text=I want Teddy Surprise Box" class="btn-small">Order on WhatsApp</a>
 </div>
 
 <div class="product-card">
-<h3>🎂 Chocolate Cake</h3>
-<p>Starting from Rs. 2,199</p>
+<img src="https://via.placeholder.com/300x300?text=Chocolate+Cake">
+<h3>Chocolate Cake</h3>
+<p>⭐⭐⭐⭐⭐</p>
+<p>Starting From <strong>Rs. 2,199</strong></p>
+<a href="https://wa.me/923278266830?text=I want Chocolate Cake" class="btn-small">Order on WhatsApp</a>
 </div>
 
 </div>
 
 </section>
 
-<section class="why-us">
+<section class="tech" id="tech">
 
-<h2>Why Choose HappyParcel.pk?</h2>
+<h2>Tech & Lifestyle Collection</h2>
 
-<div class="why-grid">
+<div class="product-grid">
 
-<div class="why-card">
-<h3>🚚 Fast Delivery</h3>
-<p>Quick and reliable delivery across Pakistan.</p>
+<div class="product-card">
+<img src="https://via.placeholder.com/300x300?text=AirPods">
+<h3>AirPods</h3>
+<p>Starting From <strong>Rs. 4,999</strong></p>
+<a href="https://wa.me/923278266830?text=I want AirPods" class="btn-small">Order Now</a>
 </div>
 
-<div class="why-card">
-<h3>🎁 Premium Packaging</h3>
-<p>Every gift is packed beautifully with care.</p>
+<div class="product-card">
+<img src="https://via.placeholder.com/300x300?text=Smart+Watch">
+<h3>Smart Watch</h3>
+<p>Starting From <strong>Rs. 5,999</strong></p>
+<a href="https://wa.me/923278266830?text=I want Smart Watch" class="btn-small">Order Now</a>
 </div>
 
-<div class="why-card">
-<h3>💖 Customized Gifts</h3>
-<p>Personalized gifts for birthdays, anniversaries and special moments.</p>
+<div class="product-card">
+<img src="https://via.placeholder.com/300x300?text=Speaker">
+<h3>Bluetooth Speaker</h3>
+<p>Starting From <strong>Rs. 2,499</strong></p>
+<a href="https://wa.me/923278266830?text=I want Bluetooth Speaker" class="btn-small">Order Now</a>
 </div>
 
-<div class="why-card">
-<h3>⭐ Trusted Service</h3>
-<p>Customer satisfaction is our top priority.</p>
+<div class="product-card">
+<img src="https://via.placeholder.com/300x300?text=Power+Bank">
+<h3>Power Bank</h3>
+<p>Starting From <strong>Rs. 2,999</strong></p>
+<a href="https://wa.me/923278266830?text=I want Power Bank" class="btn-small">Order Now</a>
+</div>
+
+</div>
+
+</section>
+<!-- ================= CUSTOMER REVIEWS START ================= -->
+
+<section class="reviews" id="reviews">
+
+<h2>What Our Customers Say</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<p>
+Amazing service! The bouquet was exactly as shown and delivered on time.
+</p>
+
+<h4>Ali - Karachi</h4>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<p>
+Beautiful gift box and premium packing. Highly recommended.
+</p>
+
+<h4>Ayesha - Lahore</h4>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<p>
+Excellent quality AirPods and very fast delivery.
+</p>
+
+<h4>Hamza - Islamabad</h4>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="contact">
+<!-- ================= CUSTOMER REVIEWS END ================= -->
 
-<h2>Contact Us</h2>
 
-<p>📍 Karachi, Pakistan</p>
 
-<p>📞 +92 327-8266830</p>
 
-<p>📧 happyparcel.pk@gmail.com</p>
 
-<p>📱 Follow us on Instagram & Facebook: @happyparcel.pk</p>
+<!-- ================= CONTACT START ================= -->
 
-<a href="#" class="btn">Order on WhatsApp</a>
+<section class="contact" id="contact">
+
+<h2>Get In Touch</h2>
+
+<p>
+📍 Karachi, Pakistan
+</p>
+
+<p>
+📞 +92 327 8266830
+</p>
+
+<p>
+📧 happyparcel.pk@gmail.com
+</p>
+
+<p>
+Follow us on Instagram & Facebook:
+<strong>@happyparcel.pk</strong>
+</p>
+
+<a href="https://wa.me/923278266830" class="btn">
+
+Order on WhatsApp
+
+</a>
 
 </section>
+
+<!-- ================= CONTACT END ================= -->
+
+
+
+
+
+<!-- ================= FOOTER START ================= -->
 
 <footer>
 
-<p>© 2026 HappyParcel.pk. All Rights Reserved.</p>
+<div class="footer-container">
 
-<p>Made with ❤️ in Pakistan</p>
+<div>
+
+<h3>HappyParcel.pk</h3>
+
+<p>
+
+Making Every Moment Special With Customized Gifts.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#categories">Categories</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#tech">Tech Store</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<p>Instagram</p>
+
+<p>Facebook</p>
+
+<p>WhatsApp</p>
+
+</div>
+
+</div>
+
+<p class="copyright">
+
+© 2026 HappyParcel.pk | All Rights Reserved.
+
+</p>
 
 </footer>
-  
+
+<a href="https://wa.me/923278266830"
+
+class="whatsapp-float"
+
+target="_blank">
+
+💬
+
+</a>
+
+<script src="js/script.js"></script>
+
 </body>
+
 </html>
