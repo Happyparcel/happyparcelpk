@@ -11,9 +11,6 @@ font-size:24px;
 cursor:pointer;
 color:#d62828;
 }
-/* ===========================
-   GOOGLE FONT
-=========================== */
 
 *{
 margin:0;
@@ -29,9 +26,6 @@ color:#222;
 line-height:1.6;
 }
 
-/* ===========================
-HEADER
-=========================== */
 
 header{
 position:sticky;
@@ -71,10 +65,6 @@ nav ul li a:hover{
 color:#d62828;
 }
 
-/* ===========================
-SEARCH
-=========================== */
-
 .search-box{
 display:flex;
 align-items:center;
@@ -97,9 +87,6 @@ border-radius:0 30px 30px 0;
 cursor:pointer;
 }
 
-/* ===========================
-HERO
-=========================== */
 
 .hero{
 height:90vh;
@@ -136,9 +123,6 @@ gap:15px;
 flex-wrap:wrap;
 }
 
-/* ===========================
-BUTTONS
-=========================== */
 
 .btn,
 .btn-small{
@@ -174,9 +158,6 @@ background:#25D366;
 .secondary:hover{
 background:#1da851;
 }
-/* ===========================
-CATEGORIES
-=========================== */
 
 .categories,
 .products,
@@ -209,10 +190,6 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 
 }
-
-/* ===========================
-CATEGORY CARD
-=========================== */
 
 .category-card{
 
@@ -251,10 +228,6 @@ color:#666;
 transform:translateY(-10px);
 
 }
-
-/* ===========================
-PRODUCT CARD
-=========================== */
 
 .product-card{
 
@@ -295,10 +268,6 @@ transform:translateY(-10px);
 
 }
 
-/* ===========================
-REVIEWS
-=========================== */
-
 .review-card{
 
 background:#fff;
@@ -317,10 +286,6 @@ color:#ffb703;
 
 }
 
-/* ===========================
-CONTACT
-=========================== */
-
 .contact{
 
 text-align:center;
@@ -332,10 +297,6 @@ text-align:center;
 margin:12px 0;
 
 }
-
-/* ===========================
-FOOTER
-=========================== */
 
 footer{
 
@@ -393,9 +354,6 @@ padding-top:20px;
 
 }
 
-/* ===========================
-FLOATING WHATSAPP
-=========================== */
 
 .whatsapp-float{
 
@@ -423,26 +381,19 @@ transform:scale(1.1);
 
 }
 
-/* ===========================
-RESPONSIVE
-=========================== */
-@/* ===========================
-MOBILE RESPONSIVE
-=========================== */
-
 @media (max-width:768px){
 
 header{
 position:sticky;
 top:0;
 left:0;
+width:100%;
 height:60px;
-padding:0 15px;
+padding:0 12px;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 background:#fff;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
 z-index:999;
 }
    
