@@ -33,7 +33,7 @@ top:0;
 left:0;
 width:100%;
 background:#fff;
-padding:18px 8%;
+padding:15px 5%;
 display:flex;
 align-items:center;
 justify-content:space-between;
@@ -46,31 +46,36 @@ z-index:999;
 display:flex;
 align-items:center;
 gap:10px;
-font-size:28px;
+font-size:26px;
 font-weight:700;
 color:#d62828;
+flex-shrink:0;
 }
 
 .logo img{
-width:45px;
-height:45px;
+width:42px;
+height:42px;
 object-fit:contain;
 }
 
-.logo span{
-color:#d62828;
+nav{
+flex:1;
+display:flex;
+justify-content:center;
 }
 
 nav ul{
 display:flex;
+align-items:center;
 list-style:none;
-gap:25px;
+gap:22px;
 }
 
 nav ul li a{
 text-decoration:none;
-color:#333;
+font-size:15px;
 font-weight:500;
+color:#333;
 transition:.3s;
 }
 
@@ -78,8 +83,41 @@ nav ul li a:hover{
 color:#d62828;
 }
 
+.search-box{
+display:flex;
+align-items:center;
+flex-shrink:0;
+}
+
 .search-box input{
-width:180px;
+width:220px;
+height:42px;
+padding:0 15px;
+border:1px solid #ddd;
+border-right:none;
+border-radius:25px 0 0 25px;
+outline:none;
+font-size:14px;
+}
+
+.search-box button{
+width:48px;
+height:42px;
+border:none;
+background:#d62828;
+color:#fff;
+border-radius:0 25px 25px 0;
+cursor:pointer;
+font-size:18px;
+display:flex;
+justify-content:center;
+align-items:center;
+transition:.3s;
+}
+
+.search-box button:hover{
+background:#b91c1c;
+}
 
 .hero{
 height:90vh;
