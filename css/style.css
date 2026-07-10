@@ -78,32 +78,8 @@ nav ul li a:hover{
 color:#d62828;
 }
 
-.search-box{
-display:flex;
-align-items:center;
-flex-shrink:0;
-}
-
 .search-box input{
 width:180px;
-
-.search-box input{
-padding:10px 15px;
-border:1px solid #ddd;
-border-radius:30px 0 0 30px;
-outline:none;
-width:220px;
-}
-
-.search-box button{
-padding:10px 18px;
-border:none;
-background:#d62828;
-color:#fff;
-border-radius:0 30px 30px 0;
-cursor:pointer;
-}
-
 
 .hero{
 height:90vh;
