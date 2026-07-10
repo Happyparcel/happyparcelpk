@@ -433,16 +433,26 @@ MOBILE RESPONSIVE
 @media (max-width:768px){
 
 header{
+position:sticky;
+top:0;
+left:0;
+height:60px;
+padding:0 15px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:12px 15px;
+background:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+z-index:999;
 }
-
+   
 .logo{
-font-size:18px;
+font-size:20px;
+font-weight:700;
 flex:1;
 text-align:center;
+line-height:1;
+white-space:nowrap;
 }
 
 .mobile-menu-btn,
