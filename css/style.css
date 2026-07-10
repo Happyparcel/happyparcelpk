@@ -403,22 +403,30 @@ left:0;
 width:100%;
 height:60px;
 padding:0 12px;
-display:flex;
+display:grid;
+grid-template-columns:40px 1fr 40px 40px;
 align-items:center;
-justify-content:space-between;
 background:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 z-index:999;
 }
-   
+
+/* Mobile Icons */
+
 .mobile-menu-btn,
 .mobile-search-btn,
 .mobile-contact-btn{
-display:block;
+display:flex;
+justify-content:center;
+align-items:center;
 font-size:24px;
 cursor:pointer;
 color:#d62828;
 }
-   
+
+/* Logo */
+
+.logo{
 display:flex;
 justify-content:center;
 align-items:center;
@@ -436,6 +444,9 @@ display:none;
 display:block;
 font-size:18px;
 }
+
+/* Navigation */
+
 nav{
 display:none;
 }
@@ -458,6 +469,8 @@ flex-direction:column;
 align-items:center;
 gap:15px;
 }
+
+/* Search */
 
 .search-box{
 display:none;
