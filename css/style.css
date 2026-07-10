@@ -41,8 +41,9 @@ width:100%;
 background:#fff;
 padding:18px 8%;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+gap:20px;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
 z-index:999;
 }
