@@ -81,7 +81,11 @@ color:#d62828;
 .search-box{
 display:flex;
 align-items:center;
+flex-shrink:0;
 }
+
+.search-box input{
+width:180px;
 
 .search-box input{
 padding:10px 15px;
