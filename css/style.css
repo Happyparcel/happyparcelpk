@@ -43,8 +43,21 @@ z-index:999;
 }
 
 .logo{
+display:flex;
+align-items:center;
+gap:10px;
 font-size:28px;
 font-weight:700;
+color:#d62828;
+}
+
+.logo img{
+width:45px;
+height:45px;
+object-fit:contain;
+}
+
+.logo span{
 color:#d62828;
 }
 
