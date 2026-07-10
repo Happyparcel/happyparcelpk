@@ -420,11 +420,13 @@ color:#d62828;
 }
    
 .logo{
-flex:1;
-text-align:center;
+display:flex;
+justify-content:center;
+align-items:center;
 font-size:18px;
 font-weight:700;
 color:#d62828;
+text-align:center;
 }
 
 .logo img{
