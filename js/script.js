@@ -91,16 +91,11 @@ console.log("HappyParcel.pk Loaded Successfully ✅");
 const menuBtn = document.querySelector(".mobile-menu-btn");
 const nav = document.querySelector("nav");
 
-if(menuBtn && nav){
-
-menuBtn.addEventListener("click",()=>{
-
-nav.classList.toggle("active");
-
-});
-
+if (menuBtn && nav) {
+    menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
 }
-
 
 // ===============================
 // Mobile Search Toggle
@@ -109,12 +104,8 @@ nav.classList.toggle("active");
 const mobileSearchBtn = document.querySelector(".mobile-search-btn");
 const searchBox = document.querySelector(".search-box");
 
-if(mobileSearchBtn && searchBox){
-
-mobileSearchBtn.addEventListener("click",()=>{
-
-searchBox.classList.toggle("active");
-
-});
-
+if (mobileSearchBtn && searchBox) {
+    mobileSearchBtn.addEventListener("click", () => {
+        searchBox.classList.toggle("active");
+    });
 }
