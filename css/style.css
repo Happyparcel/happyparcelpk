@@ -410,17 +410,20 @@ background:#fff;
 z-index:999;
 }
    
+.logo{
+flex:1;
+text-align:center;
+font-size:18px;
+font-weight:700;
+color:#d62828;
+}
+
 .logo img{
 display:none;
 }
 
-.logo{
-font-size:18px;
-text-align:center;
-flex:1;
-}
-
 .logo span{
+display:block;
 font-size:18px;
 }
 nav{
